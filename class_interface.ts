@@ -23,19 +23,3 @@ let aviao = new Aviao
 
 carro.locomover_se()
 aviao.locomover_se()
-
-/*
-class Eu {
-    constructor(public peso: number) {
-
-    }
-
-    fazerSupino() {
-        console.log(`Fazendo supino com ${this.peso} kg de cada lado.`)
-    }
-}
-
-let eu = new Eu(15)
-
-eu.fazerSupino()
-*/
