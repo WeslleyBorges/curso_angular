@@ -32,3 +32,9 @@ function retornaPositivos(...arrayzin: number[]) {
 console.log(aumentoVelocidade(1, 2))
 console.log(aumentoVelocidade2(2))
 console.log(retornaPositivos(1, 0, -3, -7, 2))
+
+// Usando template string e if de um linha <3
+let numero = 3
+let isPar = (numero: number): boolean => numero % 2 == 0 
+
+console.log(`O número ${numero} ${isPar(numero)? 'é par' : 'é ímpar'}.`)

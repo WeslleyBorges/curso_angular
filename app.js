@@ -26,3 +26,7 @@ function retornaPositivos() {
 console.log(aumentoVelocidade(1, 2));
 console.log(aumentoVelocidade2(2));
 console.log(retornaPositivos(1, 0, -3, -7, 2));
+// Usando template string e if de um linha <3
+var numero = 3;
+var isPar = function (numero) { return numero % 2 == 0; };
+console.log("O n\u00FAmero " + numero + " " + (isPar(numero) ? 'é par' : 'é ímpar') + ".");
