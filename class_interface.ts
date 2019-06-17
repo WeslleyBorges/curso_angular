@@ -1,25 +1,14 @@
-class Transporte {
-    constructor(public velocidade: number){}
-
-    locomover_se() {
-        console.log(`Locomovendo-se a ${this.velocidade} km/h.`)
-    }
-}
-
-class Carro extends Transporte {
-    constructor() {
-        super(200)
-    }
-}
-
-class Aviao extends Transporte {
-    constructor() {
-        super(900)
-    }
-}
+import {Carro, Aviao} from './transportes'
 
 let carro = new Carro()
-let aviao = new Aviao
 
 carro.locomover_se()
-aviao.locomover_se()
+
+let aviao = new Aviao
+
+let ameacador = (aviao: Aviao): boolean => {
+  // HACK: Lembrei dele!
+  return !!aviao.poderDestrutivo
+}
+
+console.log('O avião instanciado é ameaçador? ' + ameacador(aviao))
