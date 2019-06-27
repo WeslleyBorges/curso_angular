@@ -1,17 +1,20 @@
+import * as _ from 'lodash'
+
+console.log(_.pad("Exemplos em Typescript", 50, '='))
 console.log('aee')
 
-let retornaParametro = (numero: number): number => numero 
+let retornaParametro = (numero: number): number => numero
 
 console.log(retornaParametro(0))
 
-let imprimeMensagemPronta = () => console.log('kkj eae men') 
+let imprimeMensagemPronta = () => console.log('kkj eae men')
 
 imprimeMensagemPronta()
 
 // Declaração de uma variável que será uma função
 let functionVar: (msg: string) => string
 
-functionVar = msg => console.log(msg)
+//functionVar = msg => console.log(msg)
 
 functionVar('kkj eae men dnv')
 
@@ -33,8 +36,8 @@ console.log(aumentoVelocidade(1, 2))
 console.log(aumentoVelocidade2(2))
 console.log(retornaPositivos(1, 0, -3, -7, 2))
 
-// Usando template string e if de um linha <3
+// Usando template string e if de uma linha <3
 let numero = 3
-let isPar = (numero: number): boolean => numero % 2 == 0 
+let isPar = (numero: number): boolean => numero % 2 == 0
 
 console.log(`O número ${numero} ${isPar(numero)? 'é par' : 'é ímpar'}.`)
